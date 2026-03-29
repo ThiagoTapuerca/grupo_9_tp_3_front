@@ -1,20 +1,19 @@
 /* colores */
 :root {
-  --color-crema: #f5deb3;
-  --color-marron: #8b5a2b;
-  --color-marron-oscuro: #5c3a1e;
-  --color-dorado: #d2691e;
-  --color-fondo: #fffaf3;
-  --color-texto: #3b2a1a;
-  --color-texto-claro: #ffffff;
+  --color-marron-oscuro: #5D4037;
+  --color-destacado: #FFD54F;
+  --color-azulclaro: #1976D2;
+  --color-verdeaqua: #a7ffeb;
+  --color-texto: #0c0c0b;
+  --color-blanco-crema: #f5f5dc;
 }
 
 /* menú nav*/
 header {
   width: auto;
-  background-color: var(--color-crema);
-  border-bottom: 4px solid var(--color-marron);
-  padding: 12px;
+  background-color: var(--color-blanco-crema);
+  border-bottom: 4px solid var(--color-marron-oscuro);
+  padding: 10px;
 }
 
 header h1 {
@@ -26,15 +25,16 @@ header nav {
 }
 
 nav a {
-  text-decoration: none;
-  color: var(--color-marron-oscuro);
-  font-family: var(--fuente-principal);
-  font-weight: bold;
-  margin: 8px;
+    text-decoration: none;
+    font-family: var(--fuente-principal);
+    font-size: 18px;               
+    color: var(--color-texto);      
+    font-weight: bold;
+    margin: 8px;                   /* El espacio entre los links */
 }
 
 nav a:hover {
-  color: var(--color-dorado);
+  color: var(--color-verdeaqua);
 }
 
 #menu-logo {
@@ -45,7 +45,7 @@ nav a:hover {
 
 #menu-links {
   display: inline-block;
-  width: 79%;
+  width: 70%;
   text-align: right;
   vertical-align: middle;
 }
