@@ -105,10 +105,30 @@ footer p {
   margin: 8px;
 }
 
-.card-img img {
+/*.card-img img {
   border-radius: 100%;
   width: 120px;
   height: 120px;
+}*/
+
+.card-img {
+    width: 100%;           /* Hace que la imagen ocupe todo el ancho disponible de la card */
+    max-width: 400px;      /* Limita el tamaño máximo para que no sea gigante en pantallas grandes */
+    height: 180px;   
+    object-fit: cover;     /* 2. ¡Esta es la magia! Recorta la imagen para que llene el espacio sin deformarse */
+    object-position: center;/* 3. Centra el recorte (para no cortarle la cabeza a Rome) */       
+    display: block;        /* Ayuda a centrarla mejor */
+    margin: 15px;   /* 15px de espacio arriba, centrada a los lados, 0 abajo */
+    border-radius: 12px;   /* Le da bordes redondeados para que quede más linda */
+    box-shadow: 2px 2px 10px rgba(2, 2, 2, 0.5); /* Opcional: le da una sombra suave */
+    margin-left: auto; /* 2. Empuja desde la izquierda */
+    margin-right: auto;/* 3. Empuja desde la derecha */
+}
+
+.card {
+    width: 30%;           /* Un poquito más anchas */
+    min-width: 280px;     /* Evita que se deformen en tablets */
+    margin-bottom: 20px;  /* Espacio por si se ponen una debajo de otra en el celular */
 }
 
 .card-descripcion h3,
