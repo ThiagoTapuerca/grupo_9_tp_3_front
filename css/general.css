@@ -14,6 +14,11 @@ header {
   background-color: var(--color-verdeaqua);
   border-bottom: 4px solid var(--color-texto);
   padding: 10px;
+
+  display: flex;            /* Pone el logo y el nav en la misma fila */
+    align-items: center;      /* Los centra verticalmente */
+    justify-content: flex-start; /* Los pega todos hacia la izquierda (el inicio) */
+    gap: 100px;                /* Este número es el espacio entre el logo y el grupo de links */
 }
 
 header h1 {
@@ -114,4 +119,12 @@ footer p {
 
 .card-descripcion p {
   text-align: justify;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
 }
