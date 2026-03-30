@@ -10,9 +10,9 @@
 
 /* menú nav*/
 header {
-  width: auto;
-  background-color: var(--color-blanco-crema);
-  border-bottom: 4px solid var(--color-marron-oscuro);
+  width:auto;
+  background-color: var(--color-verdeaqua);
+  border-bottom: 4px solid var(--color-texto);
   padding: 10px;
 }
 
@@ -32,6 +32,7 @@ nav a {
     font-weight: bold;
     margin: 8px;                   /* El espacio entre los links */
 }
+
 
 nav a:hover {
   color: var(--color-verdeaqua);
@@ -73,7 +74,7 @@ footer {
   text-align: center;
   width: 98%;
   background-color: var(--color-marron-oscuro);
-  color: var(--color-fondo);
+  color: var(--color-blanco-crema);
   padding: 12px;
 }
 
