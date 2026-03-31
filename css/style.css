@@ -13,6 +13,8 @@ nav {
   padding: 20px;
 }
 
+
 #menu-links {
-  background-color: var(--color-principal);
+  border-left: 4px double var(--color-texto);
+  border-right: 4px double var(--color-texto);
 }
