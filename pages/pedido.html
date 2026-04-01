@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto - Pastelería N°1</title>
+    <title>Contacto - Pet Shopardium</title>
     <meta
       name="description"
-      content="Contáctanos en Pastelería N°1. Tienes dudas o sugerencias? ¡Estamos aquí para ayudarte!"
+      content="Contáctanos en Pet Shopardium. Tienes dudas o sugerencias? ¡Estamos aquí para ayudarte!"
     />
     <link
       rel="shortcut icon"
@@ -19,7 +19,7 @@
     <!-- Estructura básica de una página web -->
     <header>
       <div id="menu-logo">
-        <h1>Pastelería N°1</h1>
+        <h1>Pet Shopardium</h1>
         <img
           src="../assets/favicon/pasteleria_logo.png"
           alt="Logo de Pastelería N°1"
@@ -47,25 +47,30 @@
           <label for="nombre">Nombre</label>
           <input type="text" id="nombre" name="nombre" required />
 
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+
           <label for="telefono">Teléfono</label>
           <input type="tel" id="telefono" name="telefono" required />
 
-          <label for="fecha">Fecha del evento</label>
-          <input type="date" id="fecha" name="fecha" />
-
+         
           <br />
 
-          <label for="tipo-pastel">Tipo de producto</label>
-          <select id="tipo-pastel" name="producto">
-            <option>Pastel personalizado</option>
-            <option>Cupcakes</option>
-            <option>Postres surtidos</option>
-            <option>Catering para evento</option>
+          <label for="tipo-producto">Tipo de producto</label>
+          <select id="tipo-producto" name="producto">
+            <option value = "" disabled selected>  </option>
+            <option>Alimento perro</option>
+            <option>Alimento gato</option>
+            <option>Cepillo</option>
+            <option>Comedero</option>
+            <option>Collar</option>
+            <option>Pelota</option>
           </select>
 
           <br />
 
-          <p>Tamaño del pastel</p>
+          <p>Tamaño del pedido</p>
 
           <input type="radio" id="chico" name="tamano" />
           <label for="chico">Pequeño</label>
@@ -78,34 +83,18 @@
 
           <br /><br />
 
-          <p>Sabores</p>
-
-          <input type="checkbox" id="chocolate" />
-          <label for="chocolate">Chocolate</label>
-
-          <input type="checkbox" id="vainilla" />
-          <label for="vainilla">Vainilla</label>
-
-          <input type="checkbox" id="frutilla" />
-          <label for="frutilla">Frutilla</label>
-
-          <input type="checkbox" id="dulce-leche" />
-          <label for="dulce-leche">Dulce de leche</label>
-
-          <br /><br />
-
-          <label for="color">Color principal del pastel</label>
-          <input type="color" id="color" name="color" />
-
-          <br /><br />
-
-          <label for="imagen">Subir referencia de diseño</label>
-          <input type="file" id="imagen" name="imagen" />
+          <label for="retiro">¿Cómo deseas retirar tu pedido?</label>
+          <select id="retiro" name="retiro">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option>Retiro en tienda</option>
+            <option>Entrega a domicilio</option>
+          </select>
 
           <br /><br />
 
           <label for="comentarios">Detalles del pedido</label>
-
+          <br /><br />
+          <br /><br />
           <textarea id="comentarios" name="comentarios" rows="4"></textarea>
 
           <br /><br />
