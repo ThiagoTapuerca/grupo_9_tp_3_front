@@ -110,19 +110,24 @@ footer p {
 
 /* página servicios */
 #contenedor {
-  text-align: center;
-  width: 100%;
+    display: flex;       /* Los pone en fila */
+    flex-wrap: wrap;     /* ¡ESTO ES CLAVE! Hace que las cartas nuevas bajen solas */
+    justify-content: center; /* Las centra horizontalmente */
+    gap: 30px;           /* Crea el espacio entre cartas (arriba y a los lados) */
+    width: 100%;
+    padding: 20px 0;
 }
 
 .card {
-  display: inline-block;
-  width: 28%;
-  min-height: 320px;
-  vertical-align: top;
-  border: 2px solid var(--color-marron-oscuro);
-  border-radius: 8px;
-  padding: 16px;
-  margin: 8px;
+  width: 30%;           /* Entran 3 por fila */
+    min-width: 280px;     /* No se deforman en pantallas chicas */
+    border: 2px solid var(--color-texto);
+    border-radius: 8px;
+    padding: 16px;
+    background-color: white; /* Para que no se transparente nada */
+    display: flex;
+    flex-direction: column; /* Alinea título, texto e imagen uno abajo del otro */
+    justify-content: space-between; /* Hace que todas las cartas terminen a la misma altura */
 }
 
 /*.card-img img {
@@ -168,4 +173,19 @@ footer p {
 
 .card p {
     text-align: center;
+}
+
+/* ESTO AFECTA SOLO A LAS DE SERVICIOS */
+.card-chica {
+    width: 28%;           /* Más angostas para que entren 3 */
+    min-height: 250px;    /* Más petisas para que entren 6 en pantalla */
+    padding: 10px;        /* Menos margen interno */
+    gap: 5px;             /* Menos espacio entre el título y la foto */
+}
+
+/* Y para las fotos de servicios que ya tenías: */
+.img-servicios {
+    height: 120px;        /* Altura reducida solo para los productos */
+    width: 100%;
+    object-fit: cover;
 }
