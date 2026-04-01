@@ -190,8 +190,9 @@ footer p {
     flex-wrap: wrap;     /* ¡CLAVE! Permite que bajen a la segunda fila */
     justify-content: center; /* Las centra en la pantalla */
     gap: 20px;           /* Espacio entre todas las cartas */
-    padding: 20px;
-    width: 100%;
+    padding: 40px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* --- ESTILOS ESPECÍFICOS PARA STOCK (Chicas) --- */
@@ -202,6 +203,7 @@ footer p {
 }
 
 #contenedor-stock .card-img {
+  border: 1px solid var(--color-texto);
     height:400px; /* Foto petisa para que no scrolleen tanto */
     width: 100%;
     object-fit: cover;
