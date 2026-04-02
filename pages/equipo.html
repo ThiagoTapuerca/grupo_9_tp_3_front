@@ -2,44 +2,38 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuestro Equipo de Proyecto</title>
-    
+    <link rel="stylesheet" href="../css/style.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
-            margin: 0;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            color: #333;
-        }
-
+        /* Selector de ID para identificar de forma única la sección del equipo */
         #seccion-equipo {
+            /* Flexbox se menciona en el repaso de la Clase 2 para la estructura del diseño */
             display: flex;
             justify-content: center;
             gap: 20px;
             padding: 20px;
         }
 
+        /* Selector de clase para aplicar estilos a múltiples elementos a la vez */
         .integrante {
             background-color: white;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 10px; /* Bordes redondeados */
             text-align: center;
             width: 200px;
             border: 1px solid #ccc;
         }
 
+        /* Estilos específicos para la imagen dentro de la clase integrante */
         .integrante img {
             width: 120px;
             height: 120px;
-            border-radius: 50%;
+            border-radius: 50%; /* Hace que la imagen sea circular */
             object-fit: cover;
         }
 
+        /* Clases para la tipografía y colores */
         .nombre {
             font-size: 18px;
             font-weight: bold;
@@ -55,43 +49,64 @@
 <body>
 
     <header>
-        <h1>Personas que forman parte del proyecto</h1>
-    </header>
+      <div id="menu-logo">
+        <h1>Pet Shopardium</h1>
+        <img
+          src="../img/PetShopardium.png"
+          alt="Logo de PetShopardium"
+        />
+      </div>
 
+      <div id="menu-links">
+        <nav>
+          <a href="../index.html">Inicio</a>
+          <a href="./stock.html"> Stock</a>
+          <a href="./equipo.html">Equipo</a>
+          <a href="./pedido.html">Realizar pedido</a>
+          <a href="./contacto.html">Quienes somos</a>
+          <a href="./faq.html">Preguntas frecuentes</a>
+        </nav>
+      </div>
+    </header>
     <main>
+        <h1 style="text-align: center;">Personas que forman parte del proyecto</h1>
         <section id="seccion-equipo">
             
             <div class="integrante">
-                <img src="..\img\Tiago.jpeg" alt="Foto de Tiago">
+                <img src="../img/Tiago.jpeg" alt="Foto de Tiago">
                 <p class="nombre">Tiago De Rosa Cajarabilla</p>
                 <p class="descripcion"></p>
             </div>
 
             <div class="integrante">
-                <img src="..\img\Bauti.jpeg" alt="Foto de Bautista">
+                <img src="../img/Bauti.jpeg" alt="Foto de Bautista">
                 <p class="nombre">Bautista Mazzante</p>
                 <p class="descripcion"></p>
             </div>
 
             <div class="integrante">
-                <img src="..\img\Thiti.jpeg" alt="Foto de Thiago">
+                <img src="../img/Thiti.jpeg" alt="Foto de Thiago">
                 <p class="nombre">Thiago Tapuerca</p>
                 <p class="descripcion">Estudiante de ingeniería en sistemas de información en la UNS y tecnicatura en programacion en la UTN.</p>
             </div>
 
             <div class="integrante">
-                <img src="..\img\Vidal.jpeg" alt="Foto de Santiago">
+                <img src="../img/Vidal.jpeg" alt="Foto de Santiago">
                 <p class="nombre">Santiago Vidal</p>
                 <p class="descripcion"></p>
             </div>
 
             <div class="integrante">
-                <img src="..\img\franco.jpeg" alt="Foto de Franco">
+                <img src="../img/Franco.jpeg" alt="Foto de Franco">
                 <p class="nombre">Franco Wilberger</p>
                 <p class="descripcion"></p>
             </div>
         </section>
     </main>
+
+    <footer>
+      <p>&copy; 2026 Pet Shopardium. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
