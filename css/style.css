@@ -241,3 +241,58 @@ footer p {
     display: inline-block;
     padding-bottom: 5px;
 }
+
+#form-contacto,
+#form-pedido {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 2px solid var(--color-marron-oscuro);
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form-contacto h2,
+#form-pedido h2 {
+    text-align: center;
+    color: var(--color-marron-oscuro);
+}
+
+#form-contacto input,
+#form-contacto textarea,
+#form-contacto select,
+#form-pedido input,
+#form-pedido textarea,
+#form-pedido select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+
+#form-contacto input[type="radio"],
+#form-contacto input[type="checkbox"],
+#form-pedido input[type="radio"],
+#form-pedido input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#form-contacto button,
+#form-pedido button {
+    margin-top: 10px;
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-contacto button:hover,
+#form-pedido button:hover {
+    background-color: var(--color-azulclaro);
+}
