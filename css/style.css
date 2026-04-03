@@ -81,7 +81,7 @@ nav a:hover {
 
 #menu-logo img {
   display: inline-block;
-  width: 60px;
+  width: 110px;
   vertical-align: middle;
   margin-left: 8px;
 }
@@ -110,19 +110,22 @@ footer p {
 
 /* página servicios */
 #contenedor {
-  text-align: center;
-  width: 100%;
+    display: flex;       /* Los pone en fila */
+    flex-wrap: wrap;     /* ¡ESTO ES CLAVE! Hace que las cartas nuevas bajen solas */
+    justify-content: center; /* Las centra horizontalmente */
+    gap: 30px;           /* Crea el espacio entre cartas (arriba y a los lados) */
+    width: 100%;
+    padding: 20px 0;
 }
 
 .card {
-  display: inline-block;
-  width: 28%;
-  min-height: 320px;
-  vertical-align: top;
-  border: 2px solid var(--color-marron-oscuro);
-  border-radius: 8px;
-  padding: 16px;
-  margin: 8px;
+    border: 2px solid var(--color-marron-oscuro);
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
 }
 
 /*.card-img img {
@@ -139,18 +142,13 @@ footer p {
     width: 100%;          /* Que ocupen el ancho de su tarjeta */
 }
 
-.img-servicios {
+.img-inicio {
     max-width: 400px;     /* El límite que le habías puesto */
     height: 200px;        /* Altura fija para que todas las cards de servicios midan lo mismo */
     object-fit: cover;    /* Crucial para que no se deformen al recortarse */
     object-position: center; 
 }
 
-.card {
-    width: 30%;           /* Un poquito más anchas */
-    min-width: 280px;     /* Evita que se deformen en tablets */
-    margin-bottom: 20px;  /* Espacio por si se ponen una debajo de otra en el celular */
-}
 
 .card-descripcion h3,
 .card-valor {
@@ -168,4 +166,45 @@ footer p {
 
 .card p {
     text-align: center;
+}
+
+#contenedor-inicio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#contenedor-inicio .card {
+    width: 30%;
+    min-height: 350px; /* Altura generosa para que luzca Rome */
+}
+
+#contenedor-inicio .card-img {
+    height: 200px; /* Foto grande en Inicio */
+    width: 100%;
+    object-fit: cover;
+}
+
+#contenedor-stock {
+    display: flex;       /* Las pone una al lado de la otra */
+    flex-wrap: wrap;     /* ¡CLAVE! Permite que bajen a la segunda fila */
+    justify-content: center; /* Las centra en la pantalla */
+    gap: 20px;           /* Espacio entre todas las cartas */
+    padding: 40px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* --- ESTILOS ESPECÍFICOS PARA STOCK (Chicas) --- */
+#contenedor-stock .card {
+    width: 28%;
+    min-height: 250px; /* Altura compacta para que entren las 6 */
+    min-height: 250px;   /* Altura compacta para que entren en pantalla */
+}
+
+#contenedor-stock .card-img {
+  border: 1px solid var(--color-texto);
+    height:400px; /* Foto petisa para que no scrolleen tanto */
+    width: 100%;
+    object-fit: cover;
 }
