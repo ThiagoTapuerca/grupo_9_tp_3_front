@@ -208,3 +208,36 @@ footer p {
     width: 100%;
     object-fit: cover;
 }
+
+#logo-faq {
+    width: 100px;  /* Ajustá este valor a tu gusto */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Para que quede centradito si lo deseás */
+}
+
+.contenedor-botones-contacto {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilo base de los botones */
+.btn-contacto {
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px; /* Bordes bien redondeados */
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+}
+
+.titulo-contactos {
+    color: var(--color-marron-oscuro);
+    margin-top: 50px;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
