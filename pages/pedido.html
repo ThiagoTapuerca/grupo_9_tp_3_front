@@ -1,39 +1,69 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto - Pet Shopardium</title>
-    <meta
-      name="description"
-      content="Contáctanos en Pet Shopardium. Tienes dudas o sugerencias? ¡Estamos aquí para ayudarte!"
-    />
-    <link
-      rel="shortcut icon"
-      href="../assets/favicon/pasteleria_logo.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="../css/general.css" />
-  </head>
-  <body>
-    <!-- Estructura básica de una página web -->
+    <title>Nuestro Equipo de Proyecto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+        /* Selector de ID para identificar de forma única la sección del equipo */
+        #seccion-equipo {
+            /* Flexbox se menciona en el repaso de la Clase 2 para la estructura del diseño */
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Selector de clase para aplicar estilos a múltiples elementos a la vez */
+        .integrante {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px; /* Bordes redondeados */
+            text-align: center;
+            width: 200px;
+            border: 1px solid #ccc;
+        }
+
+        /* Estilos específicos para la imagen dentro de la clase integrante */
+        .integrante img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Hace que la imagen sea circular */
+            object-fit: cover;
+        }
+
+        /* Clases para la tipografía y colores */
+        .nombre {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .descripcion {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
     <header>
       <div id="menu-logo">
         <h1>Pet Shopardium</h1>
         <img
-          src="../assets/favicon/pasteleria_logo.png"
-          alt="Logo de Pastelería N°1"
+          src="../img/PetShopardium.png"
+          alt="Logo de PetShopardium"
         />
       </div>
 
       <div id="menu-links">
         <nav>
           <a href="../index.html">Inicio</a>
-          <a href="../pages/servicios.html"> Servicios</a>
-          <a href="../pages/equipo.html">Equipos</a>
-          <a href="../pages/pedido.html">Realizar pedido</a>
-          <a href="../pages/contacto.html">Consultas</a>
-          <a href="../pages/faq.html">Preguntas frecuentes</a>
+          <a href="./stock.html"> Stock</a>
+          <a href="./equipo.html">Equipo</a>
+          <a href="./pedido.html">Realizar pedido</a>
+          <a href="./contacto.html">Quienes somos</a>
+          <a href="./faq.html">Preguntas frecuentes</a>
         </nav>
       </div>
     </header>
