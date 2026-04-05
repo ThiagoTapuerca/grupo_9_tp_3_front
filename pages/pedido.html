@@ -1,49 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuestro Equipo de Proyecto</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <style>
-        /* Selector de ID para identificar de forma única la sección del equipo */
-        #seccion-equipo {
-            /* Flexbox se menciona en el repaso de la Clase 2 para la estructura del diseño */
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        /* Selector de clase para aplicar estilos a múltiples elementos a la vez */
-        .integrante {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px; /* Bordes redondeados */
-            text-align: center;
-            width: 200px;
-            border: 1px solid #ccc;
-        }
-
-        /* Estilos específicos para la imagen dentro de la clase integrante */
-        .integrante img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%; /* Hace que la imagen sea circular */
-            object-fit: cover;
-        }
-
-        /* Clases para la tipografía y colores */
-        .nombre {
-            font-size: 18px;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-
-        .descripcion {
-            font-size: 14px;
-            color: #7f8c8d;
-        }
-    </style>
+     <link
+      rel="shortcut icon"
+      href="../img/PetShopardium.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/stylePedidos.css" />
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -68,7 +34,6 @@
       </div>
     </header>
 
-    <!-- Contenido principal de la página -->
     <main>
       <section id="form-pedido">
         <h2>Realizar un pedido </h2>
@@ -100,15 +65,16 @@
           <br />
 
           <p>Tamaño del pedido</p>
+          <div class="opciones-tamano">
+              <input type="radio" id="chico" name="tamano" />
+              <label for="chico">Pequeño</label>
 
-          <input type="radio" id="chico" name="tamano" />
-          <label for="chico">Pequeño</label>
+              <input type="radio" id="mediano" name="tamano" />
+              <label for="mediano">Mediano</label>
 
-          <input type="radio" id="mediano" name="tamano" />
-          <label for="mediano">Mediano</label>
-
-          <input type="radio" id="grande" name="tamano" />
-          <label for="grande">Grande</label>
+              <input type="radio" id="grande" name="tamano" />
+              <label for="grande">Grande</label>
+          </div>
 
           <br /><br />
 
@@ -148,7 +114,6 @@
       </section>
     </main>
 
-    <!-- Pie de página de la página -->
     <footer>
       <p>
         Copyright &copy; 2026 Pet Shopardium. Todos los derechos reservados.
