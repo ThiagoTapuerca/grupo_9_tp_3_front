@@ -1,0 +1,112 @@
+/* CONTENEDOR DEL FORMULARIO */
+#form-contacto {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border: 2px solid var(--color-marron-oscuro);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#form-contacto h2 {
+  color: var(--color-marron-oscuro);
+  text-align: center;
+  margin-top: 0;
+}
+
+#form-contacto p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* GRID DEL FORMULARIO */
+#form-contacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 15px 20px;
+  align-items: center;
+}
+
+/* Estilo para los Labels e Inputs */
+#form-contacto label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: -10px; 
+}
+
+#form-contacto input[type="text"],
+#form-contacto input[type="email"],
+#form-contacto input[type="tel"],
+#form-contacto select,
+#form-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: var(--fuente-principal);
+}
+
+/* CAMPOS QUE OCUPAN TODA LA FILA */
+#form-contacto p, 
+#servicio, 
+#mensaje, 
+#form-contacto label[for="servicio"],
+#form-contacto label[for="mensaje"],
+#form-contacto .opciones-motivo,
+#form-contacto .opcion-newsletter {
+  grid-column: 1 / -1;
+}
+
+/* ÁREA DE TEXTO (MENSAJE) */
+#mensaje {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* MOTIVO DE CONSULTA (RADIOS) */
+.opciones-motivo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px 0;
+  grid-column: 1 / -1;
+}
+
+.opciones-motivo div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.opciones-motivo input[type="radio"] {
+  margin: 0;
+}
+
+/* NEWSLETTER Y BOTÓN */
+.opcion-newsletter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+#form-contacto button {
+  grid-column: 1 / -1; /* Botón a lo ancho */
+  background-color: var(--color-principal);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#form-contacto button:hover {
+  background-color: var(--color-azulclaro);
+}

@@ -1,29 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto - Pastelería N°1</title>
-    <meta
-      name="description"
-      content="Contáctanos en Pastelería N°1. Tienes dudas o sugerencias? ¡Estamos aquí para ayudarte!"
-    />
+    <title>Contacto - PetShopardium</title>
     <link
       rel="shortcut icon"
-      href="../assets/favicon/pasteleria_logo.png"
+      href="../img/PetShopardium.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/styleContacto.css" />
   </head>
   <body>
-    <!-- Estructura básica de una página web -->
     <header>
       <div id="menu-logo">
-        <h1>Pastelería N°1</h1>
-        <img
-          src="../assets/favicon/pasteleria_logo.png"
-          alt="Logo de Pastelería N°1"
-        />
+        <h1>Pet Shopardium</h1>
+        <img src="../img/PetShopardium.png" alt="Logo PetShopardium" />
       </div>
 
       <div id="menu-links">
@@ -32,13 +25,12 @@
           <a href="../pages/stock.html"> Stock</a>
           <a href="../pages/equipo.html">Equipo</a>
           <a href="../pages/pedido.html">Realizar pedido</a>
-          <a href="../pages/contacto.html">Consultas</a>
+          <a href="../pages/contacto.html">Quienes somos</a>
           <a href="../pages/faq.html">Preguntas frecuentes</a>
         </nav>
       </div>
     </header>
 
-    <!-- Contenido principal de la página -->
     <main>
       <section id="form-contacto">
         <h2>Realizar una consulta</h2>
@@ -50,48 +42,40 @@
         </p>
 
         <form>
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" required />
-
-          <label for="apellido">Apellido</label>
-          <input type="text" id="apellido" name="apellido" required />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="telefono">Teléfono</label>
-          <input type="tel" id="telefono" name="telefono" />
-
           <p>Motivo de la consulta:</p>
-
-          <input type="radio" id="consulta-producto" name="motivo" />
-          <label for="consulta-producto">Consulta sobre productos</label>
-
-          <input type="radio" id="consulta-evento" name="motivo" />
-          <label for="consulta-evento">Consulta para eventos</label>
-
-          <input type="radio" id="consulta-otro" name="motivo" />
-          <label for="consulta-otro">Otro</label>
+          <div class="opciones-motivo">
+            <div>
+              <input type="radio" id="consulta-producto" name="motivo" />
+              <label for="consulta-producto">Productos</label>
+            </div>
+            <div>
+              <input type="radio" id="consulta-otro" name="motivo" />
+              <label for="consulta-otro">Otro</label>
+            </div>
+          </div>
 
           <label for="servicio">Servicio de interés</label>
           <select id="servicio" name="servicio">
-            <option>Pasteles personalizados</option>
-            <option>Postres y bocadillos</option>
-            <option>Catering</option>
+            <option>Dudas</option>
+            <option>Problemas</option>
+            <option>Otro</option>
           </select>
 
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" name="mensaje" rows="4"></textarea>
 
-          <input type="checkbox" id="newsletter" />
-          <label for="newsletter">Quiero recibir novedades y promociones</label>
+          <div class="opcion-newsletter">
+            <input type="checkbox" id="newsletter" />
+            <label for="newsletter"
+              >Quiero recibir novedades y promociones</label
+            >
+          </div>
 
           <button type="submit">Enviar consulta</button>
         </form>
       </section>
     </main>
 
-    <!-- Pie de página de la página -->
     <footer>
       <p>
         Copyright &copy; 2026 Pastelería N°1. Todos los derechos reservados.
