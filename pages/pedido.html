@@ -1,44 +1,44 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="es">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto - Pastelería N°1.</title>
+    <title>Contacto - Pastelería N°1</title>
     <meta
       name="description"
       content="Contáctanos en Pastelería N°1. Tienes dudas o sugerencias? ¡Estamos aquí para ayudarte!"
     />
     <link
       rel="shortcut icon"
-      href="../assets/favicon/pasteleria_logo.png"
+      href="../assets/favicon/PetShopardium.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../css/general.css" />
-  </head>
-  <body>
-    <!-- Estructura básica de una página web -->
+    <link rel="stylesheet" href="../css/components/stylePedidos.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
     <header>
       <div id="menu-logo">
-        <h1>Pastelería N°1</h1>
+        <h1>Pet Shopardium</h1>
         <img
-          src="../assets/favicon/pasteleria_logo.png"
-          alt="Logo de Pastelería N°1"
+          src="../assets/favicon/PetShopardium.png"
+          alt="Logo de PetShopardium"
         />
       </div>
 
       <div id="menu-links">
         <nav>
           <a href="../index.html">Inicio</a>
-          <a href="../pages/servicios.html"> Servicios</a>
-          <a href="../pages/equipo.html">Equipos</a>
-          <a href="../pages/pedido.html">Realizar pedido</a>
-          <a href="../pages/contacto.html">Consultas</a>
-          <a href="../pages/faq.html">Preguntas frecuentes</a>
+          <a href="./stock.html"> Stock</a>
+          <a href="./equipo.html">Equipo</a>
+          <a href="./pedido.html">Realizar pedido</a>
+          <a href="./contacto.html">Quienes somos</a>
+          <a href="./faq.html">Preguntas frecuentes</a>
+          <a href="./login.html">Login</a>
         </nav>
       </div>
     </header>
 
-    <!-- Contenido principal de la página -->
     <main>
       <section id="form-pedido">
         <h2>Realizar un pedido </h2>
@@ -47,65 +47,68 @@
           <label for="nombre">Nombre</label>
           <input type="text" id="nombre" name="nombre" required />
 
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+
           <label for="telefono">Teléfono</label>
           <input type="tel" id="telefono" name="telefono" required />
 
-          <label for="fecha">Fecha del evento</label>
-          <input type="date" id="fecha" name="fecha" />
-
           <br />
 
-          <label for="tipo-pastel">Tipo de producto</label>
-          <select id="tipo-pastel" name="producto">
-            <option>Pastel personalizado</option>
-            <option>Cupcakes</option>
-            <option>Postres surtidos</option>
-            <option>Catering para evento</option>
+          <label for="tipo-producto">Tipo de producto</label>
+          <select id="tipo-producto" name="producto">
+            <option value = "" disabled selected>  </option>
+            <option>Alimento perro</option>
+            <option>Alimento gato</option>
+            <option>Cepillo</option>
+            <option>Comedero</option>
+            <option>Collar</option>
+            <option>Pelota</option>
           </select>
 
           <br />
 
-          <p>Tamaño del pastel</p>
+          <p>Tamaño del pedido</p>
+          <div class="opciones-tamano">
+              <input type="radio" id="chico" name="tamano" />
+              <label for="chico">Pequeño</label>
 
-          <input type="radio" id="chico" name="tamano" />
-          <label for="chico">Pequeño</label>
+              <input type="radio" id="mediano" name="tamano" />
+              <label for="mediano">Mediano</label>
 
-          <input type="radio" id="mediano" name="tamano" />
-          <label for="mediano">Mediano</label>
-
-          <input type="radio" id="grande" name="tamano" />
-          <label for="grande">Grande</label>
-
-          <br /><br />
-
-          <p>Sabores</p>
-
-          <input type="checkbox" id="chocolate" />
-          <label for="chocolate">Chocolate</label>
-
-          <input type="checkbox" id="vainilla" />
-          <label for="vainilla">Vainilla</label>
-
-          <input type="checkbox" id="frutilla" />
-          <label for="frutilla">Frutilla</label>
-
-          <input type="checkbox" id="dulce-leche" />
-          <label for="dulce-leche">Dulce de leche</label>
+              <input type="radio" id="grande" name="tamano" />
+              <label for="grande">Grande</label>
+          </div>
 
           <br /><br />
 
-          <label for="color">Color principal del pastel</label>
-          <input type="color" id="color" name="color" />
+          <label for="retiro">¿Cómo deseas retirar tu pedido?</label>
+          <select id="retiro" name="retiro">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option>Retiro en tienda</option>
+            <option>Entrega a domicilio</option>
+          </select>
 
           <br /><br />
-
-          <label for="imagen">Subir referencia de diseño</label>
-          <input type="file" id="imagen" name="imagen" />
+          <label for="comentarios"> Si seleciono envio a domicilio, ingrese su direccion</label>
+          <br /><br />
+          <label for="direccion">Dirección de envío</label>
+          <input type="text" id="direccion" name="direccion" />
+          <label for="Número">Número</label>
+          <input type="text" id="Número" name="Número" />
+          <br /><br />
+          <label for="ciudad" >Ciudad</label>
+          <input type="text" id="ciudad" name="ciudad" />
+          <label for="provincia">Provincia</label>
+          <input type="text" id="provincia" name="provincia" />
+          <label for="codigo-postal">Código postal</label>
+          <input type="text" id="codigo-postal" name="codigo-postal" />
 
           <br /><br />
-
-          <label for="comentarios">Detalles del pedido</label>
-
+          
+          <label for="comentarios">Detalles del pedido, si tiene algun comentario para el envio o sobre el producto no dude en escribirlo</label>
+          <br /><br />
           <textarea id="comentarios" name="comentarios" rows="4"></textarea>
 
           <br /><br />
@@ -116,10 +119,9 @@
       </section>
     </main>
 
-    <!-- Pie de página de la página -->
     <footer>
       <p>
-        Copyright &copy; 2026 Pastelería N°1. Todos los derechos reservados.
+        Copyright &copy; 2026 Pet Shopardium. Todos los derechos reservados.
       </p>
     </footer>
   </body>

@@ -1,0 +1,145 @@
+#form-pedido{
+  max-width: 620px;
+  margin: 40px auto;
+  padding: 18px 22px;
+  border: 2px solid var(--color-marron-oscuro);
+  border-radius: 10px;
+  background-color: white;
+  font-family: var(--fuente-principal);
+}
+
+#form-pedido form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  align-items: center;
+  font-family: var(--fuente-principal);
+}
+
+#form-pedido h2{
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+#form-pedido label{
+  font-size: 13px;
+}
+
+#form-pedido input,
+#form-pedido select,
+#form-pedido textarea{
+  width: 100%;
+  padding: 6px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: var(--fuente-principal);
+}
+
+#tipo-producto,
+#retiro,
+#comentarios{
+  grid-column: 1 / -1;
+}
+
+#form-pedido label[for="comentarios"]{
+  grid-column: 1 / -1;
+  font-size: 12px;
+}
+
+#form-pedido p{
+  grid-column: 1 / -1;
+  margin: 4px 0 0 0;
+  font-weight: bold;
+}
+
+.opciones-tamano {
+  grid-column: 1 / -1; 
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  margin-bottom: 10px;
+}
+
+.opciones-tamano input[type="radio"] {
+  width: auto; 
+  margin: 0;
+  cursor: pointer;
+}
+
+.opciones-tamano label {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#chico + label,
+#mediano + label,
+#grande + label{
+  display: inline-block;
+  margin-right: 18px;
+}
+
+#chico,
+#chico + label,
+#mediano,
+#mediano + label,
+#grande,
+#grande + label{
+  display: inline-flex;
+  align-items: center;
+}
+
+#chico{ order: 2; }
+#chico + label{ order: 1; }
+
+#mediano{ order: 4; }
+#mediano + label{ order: 3; }
+
+#grande{ order: 6; }
+#grande + label{ order: 5; }
+
+#direccion{
+  grid-column: 1 / 2;
+}
+
+#Número{
+  grid-column: 2 / 3;
+}
+
+#ciudad{
+  grid-column: 1 / 2;
+}
+
+#provincia{
+  grid-column: 2 / 3;
+}
+
+#codigo-postal{
+  grid-column: 1 / 2;
+}
+
+#comentarios{
+  height: 75px;
+}
+
+#form-pedido button{
+  padding: 8px;
+  font-size: 13px;
+  width: 100%;
+  font-family: var(--fuente-principal);
+}
+
+#form-pedido button[type="submit"]{
+  grid-column: 1 / 2;
+}
+
+#form-pedido button[type="reset"]{
+  grid-column: 2 / 3;
+}
+
+#form-pedido br{
+  display: none;
+}

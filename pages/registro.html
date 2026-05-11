@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - PetShopardium</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon/PetShopardium.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components/styleRegistro.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-logo">
+        <h1>Pet Shopardium</h1>
+        <img
+          src="../assets/favicon/PetShopardium.png"
+          alt="Logo PetShopardium"
+        />
+      </div>
+
+      <div id="menu-links">
+        <nav>
+          <a href="../index.html">Inicio</a>
+          <a href="../pages/stock.html">Stock</a>
+          <a href="../pages/equipo.html">Equipo</a>
+          <a href="../pages/pedido.html">Realizar pedido</a>
+          <a href="../pages/contacto.html">Quienes somos</a>
+          <a href="../pages/faq.html">Preguntas frecuentes</a>
+          <a href="../pages/login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div id="contenedor-registro">
+        <form action="login.html">
+          <h2>Crear nueva cuenta</h2>
+
+          <div>
+            <label>Nombre Completo</label>
+            <input type="text" placeholder="Ej: Juan Pérez" required />
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="email" placeholder="correo@ejemplo.com" required />
+          </div>
+          <div>
+            <label>Fecha de nacimiento</label>
+            <input type="date" required />
+          </div>
+          <div>
+            <label>Contraseña</label>
+            <input type="password" required />
+          </div>
+          <div class="full-width">
+            <label>Confirmar contraseña</label>
+            <input type="password" required />
+          </div>
+          <div class="button-container">
+            <button type="reset">Limpiar</button>
+            <button type="submit">Regístrate</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
