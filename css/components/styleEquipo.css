@@ -1,0 +1,36 @@
+#seccion-equipo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.integrante {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.integrante img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.nombre {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.descripcion {
+  font-size: 14px;
+  color: #7f8c8d;
+}

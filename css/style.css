@@ -1,0 +1,195 @@
+/* VARIABLES GLOBALES */
+:root {
+  --color-marron-oscuro: #5D4037;
+  --color-destacado: #a7ffeb;
+  --color-azulclaro: #1976D2;
+  --color-principal: #2c7de7;
+  --color-verdeaqua: #a7ffeb;
+  --color-texto: #0c0c0b;
+  --color-blanco-crema: #f5f5dc;
+  --fuente-principal: "Arial", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fuente-principal);
+  background-color: #fafafa;
+}
+
+/* HEADER Y NAVEGACIÓN */
+header {
+  background-color: var(--color-verdeaqua);
+  border-bottom: 4px solid var(--color-texto);
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+#menu-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#menu-logo img {
+  width: 160px; 
+  vertical-align: middle;
+}
+
+#menu-logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* NAVEGACIÓN */
+#menu-links {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--color-texto);
+  font-weight: bold;
+}
+/* CONTENIDO PRINCIPAL */
+main {
+  margin: 20px;
+  min-height: 80vh; 
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: var(--color-marron-oscuro);
+  color: var(--color-blanco-crema);
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* CONTENEDOR DE LAS TARJETAS */
+#contenedor-inicio {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;               
+  flex-wrap: nowrap;       
+  margin-top: 30px;
+}
+
+/* MARCO DE CADA TARJETA */
+.card {
+  flex: 0 1 calc(20% - 20px);               
+  max-width: 300px;       
+  background-color: white;
+  border: 2px solid var(--color-marron-oscuro); 
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;      
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between; 
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1); 
+}
+
+/* ESTILO DE LOS TÍTULOS EN LAS CARDS */
+.card h2 a {
+  text-decoration: none;
+  color: var(--color-principal);
+  font-size: 20px;
+}
+
+/* ESTILO DE LAS IMÁGENES DENTRO DE LAS CARDS */
+.card-img {
+  width: 100%;            
+  height: 180px;          
+  object-fit: cover;     
+  border-radius: 8px;      
+  margin-top: 10px;
+}
+
+/* BOTÓN DE BIENVENIDA (Ajuste opcional) */
+main > button {
+  background-color: var(--color-destacado);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main > button a {
+  text-decoration: none;
+  color: var(--color-marron-oscuro);
+  font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;       
+    gap: 20px;            
+    justify-content: center; 
+    padding: 20px;
+}
+
+/* PERFIL */
+
+.perfil {
+
+  background-color: white;
+  border: 2px solid var(--color-marron-oscuro);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.perfil img {
+
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--color-principal);
+  margin-bottom: 20px;
+
+}
+
+.perfil h1 {
+
+  color: var(--color-principal);
+
+}
+
+.perfil p {
+
+  font-size: 18px;
+  color: var(--color-texto);
+
+}
+
+.perfil ul {
+
+  list-style: none;
+  padding: 0;
+
+}
+
+.perfil li {
+
+  background-color: var(--color-verdeaqua);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+
+}
