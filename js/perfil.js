@@ -4,7 +4,7 @@ async function obtenerPerfil() {
 
     try {
 
-        const respuesta = await fetch("http://localhost:3000/perfil/1");
+        const respuesta = await fetch("https://grupo-9-tp-3-back-5.onrender.com");
 
         const usuario = await respuesta.json();
 
