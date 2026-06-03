@@ -1,34 +1,34 @@
 const contenedor = document.getElementById("contenedor-stock");
 
 async function obtenerServicios() {
+  try {
+    const respuesta = await fetch(
+      "https://grupo-9-tp-3-back-5.onrender.com/servicios",
+    );
 
-    try {
+    if (!respuesta.ok) {
+      throw new Error(`Error en la petición: ${respuesta.status}`);
+    }
 
-        const respuesta = await fetch("https://grupo-9-tp-3-back-5.onrender.com");
+    const servicios = await respuesta.json();
 
-        const servicios = await respuesta.json();
+    console.log("Servicios recibidos:", servicios);
 
-        console.log(servicios);
+    contenedor.innerHTML = "";
 
-        servicios.forEach(servicio => {
-
-            contenedor.innerHTML += `
-            
+    servicios.forEach((servicio) => {
+      contenedor.innerHTML += `
             <div class="card">
                 <h2>${servicio.nombre}</h2>
                 <h3>$ ${servicio.precio}</h3>
             </div>
-
             `;
-
-        });
-
-    } catch (error) {
-
-        console.log("Error:", error);
-
-    }
-
+    });
+  } catch (error) {
+    console.error("Error al obtener servicios:", error);
+    contenedor.innerHTML =
+      "<p>Hubo un error al cargar los servicios. Intenta más tarde.</p>";
+  }
 }
 
 obtenerServicios();
