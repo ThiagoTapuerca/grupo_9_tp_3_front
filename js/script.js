@@ -11,18 +11,18 @@ async function obtenerServicios() {
     }
 
     const servicios = await respuesta.json();
-
     console.log("Servicios recibidos:", servicios);
 
     contenedor.innerHTML = "";
 
     servicios.forEach((servicio) => {
       contenedor.innerHTML += `
-            <div class="card">
-                <h2>${servicio.nombre}</h2>
-                <h3>$ ${servicio.precio}</h3>
-            </div>
-            `;
+        <div class="card">
+            <img src="${servicio.imagen}" alt="${servicio.nombre}" style="width:150px;">
+            <h2>${servicio.nombre}</h2>
+            <h3>$ ${servicio.precio}</h3>
+        </div>
+      `;
     });
   } catch (error) {
     console.error("Error al obtener servicios:", error);
