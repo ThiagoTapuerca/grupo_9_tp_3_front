@@ -4,7 +4,7 @@ async function obtenerEquipo() {
 
     try {
 
-        const respuesta = await fetch("http://localhost:3000/equipo");
+        const respuesta = await fetch("https://grupo-9-tp-3-back-5.onrender.com");
 
         const integrantes = await respuesta.json();
 
