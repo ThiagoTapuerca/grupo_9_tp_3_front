@@ -18,7 +18,7 @@ function mostrarServicios(servicios) {
 
 async function obtenerServicios() {
     try {
-        const respuesta = await fetch("https://grupo-9-tp-3-back-5.onrender.com/servicios",);
+        const respuesta = await fetch("https://grupo-9-tp-3-back-5.onrender.com/servicios");
 
         const servicios = await respuesta.json();
 
