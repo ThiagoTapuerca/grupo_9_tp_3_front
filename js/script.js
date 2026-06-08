@@ -9,7 +9,7 @@ function mostrarServicios(servicios) {
   servicios.forEach((servicio) => {
     const nombreArchivo = servicio.imagen.split("/").pop();
 
-    const urlImagen = `https://grupo-9-tp-3-back-5.onrender.com/img/${nombreArchivo}`;
+    const urlImagen = `https://thiagotapuerca.github.io/grupo_9_tp_3_front/assets/img/${nombreArchivo}`;
 
     contenedor.innerHTML += `
             <div class="card">
